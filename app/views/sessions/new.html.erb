@@ -1,6 +1,20 @@
 <% provide(:title, "Sign in") %>
 <h1>Sign in</h1>
-
+<!-- <div class='row'>
+	<div class='span6 offset3'>
+	<%= form_tag sessions_path do %>
+		<div class="field">
+			<%= label_tag :email %>
+			<%= text_field_tag :email, params[:email] %>
+		</div>
+		<div class="field">
+			<%= label_tag :password %>
+			<%= text_field_tag :password, params[:password] %>
+		</div>
+		<div class="actions"><p>New user? <%= submit_tag "Sign in", class: "btn btn-large btn-primary" %></div></p>
+	<% end %>
+	</div>
+</div> -->
 <div class='row'>
 	<div class='span6 offset3'>
 		<%= form_for(:session, url: sessions_path) do |f| %>
